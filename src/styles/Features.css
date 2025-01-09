@@ -1,0 +1,40 @@
+/* Features.css - Styles for the Features component */
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.features-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.feature-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+
+.feature-item p {
+    color: #666;
+}

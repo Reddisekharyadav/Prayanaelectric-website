@@ -1,0 +1,27 @@
+/* Locate Us component styles */
+
+.locate-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.locate-us h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.locate-us p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.locate-us .map {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
