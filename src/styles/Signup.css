@@ -1,50 +1,75 @@
-/* Signup.css - Styles for the Signup component */
-
 .signup-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-}
-
-.signup-form {
+    gap: 100px;
+    max-width: 100%;
     width: 100%;
-    max-width: 400px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
     padding: 20px;
+    background: linear-gradient(135deg, #0c0f0a, #1a3a1e, #3e704a, #2a542e);
 }
 
-.signup-form h2 {
-    margin-bottom: 20px;
+.signup-image-section, .signup-form-section {
+    width: 45%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #121212;
+    border-radius: 15px;
+    padding: 20px;
     text-align: center;
 }
 
-.signup-form input {
+.signup-image-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.signup-form-section h2 {
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+.signup-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form-section input[type="text"],
+.signup-form-section input[type="email"],
+.signup-form-section input[type="password"],
+.signup-form-section input[type="submit"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.signup-form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
+    margin-bottom: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-form-section .signup-name-fields {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.signup-form-section input[type="submit"] {
+    background-color: #00ff00;
+    color: #121212;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.signup-form button:hover {
-    background-color: #45a049;
+.signup-form-section input[type="submit"]:hover {
+    background-color: #00cc00;
 }
 
-.error-message {
-    color: red;
-    font-size: 0.9em;
+.signup-form-section a {
+    color: #00ff00;
+    text-align: center;
+    text-decoration: none;
     margin-top: 10px;
+}
+
+.signup-form-section a:hover {
+    text-decoration: underline;
 }

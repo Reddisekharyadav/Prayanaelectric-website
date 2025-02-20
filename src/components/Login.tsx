@@ -1,42 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/Login.css';
 
 const Login: React.FC = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-
-    const handleLogin = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Add login logic here
-        console.log('Logging in with:', { email, password });
-    };
-
     return (
         <div className="login-container">
-            <h2>Login</h2>
-            <form onSubmit={handleLogin}>
-                <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
+            <div className="login-image-section">
+                <img src="scooter.png" alt="Scooter Image" />
+            </div>
+            <div className="login-form-section">
+                <h2>Login</h2>
+                <p>Don't have an account? <a href="sign_up.html">Sign Up!</a></p>
+                <div className="social-login">
+                    <button className="facebook-btn">Facebook</button>
+                    <button className="google-btn">Google</button>
                 </div>
-                <div className="form-group">
-                    <label htmlFor="password">Password:</label>
-                    <input
-                        type="password"
-                        id="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                </div>
-                <button type="submit">Login</button>
-            </form>
+                <form>
+                    <div className="form-group">
+                        <input type="text" placeholder="Username" required />
+                    </div>
+                    <div className="form-group">
+                        <input type="password" placeholder="Password" required />
+                    </div>
+                    <button className="login-btn" type="submit">Sign In</button>
+                    <div className="remember-me">
+                        <input type="checkbox" id="remember-me" />
+                        <label htmlFor="remember-me">Remember me!</label>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };

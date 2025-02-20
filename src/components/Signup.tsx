@@ -1,55 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/Signup.css';
 
-const Signup: React.FC = () => {
-    const [username, setUsername] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Handle signup logic here
-        console.log('User signed up:', { username, email, password });
-    };
-
+const SignUp: React.FC = () => {
     return (
         <div className="signup-container">
-            <h2>Sign Up</h2>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="username">Username:</label>
-                    <input
-                        type="text"
-                        id="username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        required
-                    />
-                </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                </div>
-                <div>
-                    <label htmlFor="password">Password:</label>
-                    <input
-                        type="password"
-                        id="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                </div>
-                <button type="submit">Sign Up</button>
-            </form>
+            <div className="signup-image-section">
+                <img src="scooter.png" alt="Scooter Image" />
+            </div>
+            <div className="signup-form-section">
+                <h2>Create Account</h2>
+                <form>
+                    <input type="text" placeholder="Username" required />
+                    <div className="signup-name-fields">
+                        <input type="text" placeholder="First Name" required />
+                        <input type="text" placeholder="Last Name" required />
+                    </div>
+                    <input type="email" placeholder="Email" required />
+                    <input type="password" placeholder="Password" required />
+                    <input type="text" placeholder="Phone Number" required />
+                    <input type="submit" value="Sign Up" />
+                    <a href="login1.html">Already have an account? Login</a>
+                </form>
+            </div>
         </div>
     );
 };
 
-export default Signup;
+export default SignUp;

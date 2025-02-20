@@ -8,13 +8,13 @@ const Home: React.FC = () => {
             <h1>Welcome to Electric Bike Rental</h1>
             <p>Your adventure starts here!</p>
             <div className="home-links">
-                <Link to="/features">Features</Link>
-                <Link to="/performance">Performance</Link>
-                <Link to="/booking">Book Now</Link>
-                <Link to="/about-us">About Us</Link>
-                <Link to="/locate-us">Locate Us</Link>
-                <Link to="/login">Login</Link>
-                <Link to="/signup">Sign Up</Link>
+                <Link to="/Features" className="button">Features</Link>
+                <Link to="/Performance" className="button">Performance</Link>
+                <Link to="/Booking" className="button">Book Now</Link>
+                <Link to="/AboutUs" className="button">About Us</Link>
+                <Link to="/LocateUs" className="button">Locate Us</Link>
+                <Link to="/Login" className="button">Login</Link>
+                <Link to="/Signup" className="button">Sign Up</Link>
             </div>
         </div>
     );
