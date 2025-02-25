@@ -1,0 +1,168 @@
+.model-container {
+    background: linear-gradient(to right, #0a0a0a, #1a3a1e);
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.navbar-item {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    color: #72a14c;
+}
+
+.locate-us {
+    font-weight: bold;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+}
+
+.action-button {
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.action-button:hover {
+    background: white;
+    color: black;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    margin-top: 20px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Align image to the left */
+    align-items: center;
+}
+
+/* Bike Image */
+.bike-image {
+    position: absolute; /* Use absolute positioning */
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    cursor: pointer;
+}
+
+.bike-image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    animation: comeFromDistance 2s ease-out forwards;
+}
+@keyframes comeFromDistance {
+    0% {
+        transform: translate(-50%, -50%) scale(0.1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.bike-image img:hover {
+    transform: scale(1.1);
+}
+
+
+.text-content {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.model-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.model-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.introductory-price {
+    color: #72a14c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.book-now-button {
+    background: #72a14c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.book-now-button:hover {
+    background: #5a8a3c;
+}

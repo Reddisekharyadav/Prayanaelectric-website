@@ -1,3 +1,8 @@
+
+.login{
+    background: linear-gradient(135deg, #0c0f0a, #1a3a1e, #3e704a, #2a542e);
+
+}
 .login-container {
     display: flex;
     align-items: center;
@@ -10,7 +15,7 @@
     background: linear-gradient(135deg, #0c0f0a, #1a3a1e, #3e704a, #2a542e);
 }
 
-.login-image-section, .login-form-section {
+ .login-form-section {
     width: 45%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     background-color: #121212;
@@ -104,4 +109,12 @@
 .google-btn {
     background-color: #db4437;
     color: #fff;
+}
+.p{
+    color: #28c228;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+label {
+    color: #00ff00;
 }

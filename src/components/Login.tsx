@@ -1,11 +1,18 @@
 import React from 'react';
 import '../styles/Login.css';
+import logo from '../assets/logo.png'; // Adjust the path as necessary
+import scooterImage from '../assets/scooter.png'; // Adjust the path as necessary
 
 const Login: React.FC = () => {
     return (
+        <div className='login'>
+             <header className="signup-header">
+                <img src={logo} alt="Company Logo" className="signup-logo" />
+                <h1 className="signup-title">Electric Bike Rental</h1>
+            </header>
         <div className="login-container">
             <div className="login-image-section">
-                <img src="scooter.png" alt="Scooter Image" />
+                <img src={scooterImage} alt="Scooter Image" />
             </div>
             <div className="login-form-section">
                 <h2>Login</h2>
@@ -28,6 +35,7 @@ const Login: React.FC = () => {
                     </div>
                 </form>
             </div>
+        </div>
         </div>
     );
 };

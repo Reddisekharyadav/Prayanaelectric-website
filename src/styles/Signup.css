@@ -1,6 +1,11 @@
+.signup{
+    background: linear-gradient(135deg, #0c0f0a, #1a3a1e, #3e704a, #2a542e);
+
+}
 .signup-container {
     display: flex;
     align-items: center;
+    
     justify-content: center;
     gap: 100px;
     max-width: 100%;
@@ -9,8 +14,33 @@
     padding: 20px;
     background: linear-gradient(135deg, #0c0f0a, #1a3a1e, #3e704a, #2a542e);
 }
+.signup-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+   
+  
+    top: 0;
+    z-index: 1000;
+}
 
-.signup-image-section, .signup-form-section {
+.signup-logo {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.signup-title {
+    font-size: 2rem;
+    color: white;
+}
+
+ .signup-form-section {
     width: 45%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     background-color: #121212;
@@ -21,6 +51,7 @@
 
 .signup-image-section img {
     width: 100%;
+    top: 50px;
     border-radius: 10px;
 }
 

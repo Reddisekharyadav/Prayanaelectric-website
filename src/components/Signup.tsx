@@ -1,11 +1,21 @@
 import React from 'react';
 import '../styles/Signup.css';
+import logo from '../assets/logo.png';
+import bikeImage from '../assets/Bike.png';
 
 const SignUp: React.FC = () => {
     return (
+        <div className='signup'>
+           {/* Header */}
+           <header className="signup-header">
+                <img src={logo} alt="Company Logo" className="signup-logo" />
+                <h1 className="signup-title">Electric Bike Rental</h1>
+            </header>
         <div className="signup-container">
+         
+
             <div className="signup-image-section">
-                <img src="scooter.png" alt="Scooter Image" />
+                <img src={bikeImage} alt="Scooter Image" className="signup-bike-image" />
             </div>
             <div className="signup-form-section">
                 <h2>Create Account</h2>
@@ -22,6 +32,7 @@ const SignUp: React.FC = () => {
                     <a href="login1.html">Already have an account? Login</a>
                 </form>
             </div>
+        </div>
         </div>
     );
 };
