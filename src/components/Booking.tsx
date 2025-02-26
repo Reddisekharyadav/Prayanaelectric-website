@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Booking.css';
+import logo from '../assets/logo.png'; // Adjust the path as necessary
+import NavbarLinks from './Navbar'; // Adjust the path as necessary
 
 const Booking: React.FC = () => {
     const [name, setName] = useState('');
@@ -15,6 +17,21 @@ const Booking: React.FC = () => {
 
     return (
         <div className="booking-container">
+            {/* Navbar */}
+            <nav className="navbar">
+                <a href="#">
+                    <img src={logo} alt="E-Bike Logo" className="logo" />
+                </a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <NavbarLinks />
+                <div className="navbar-actions">
+                    <button className="action-button">Book Now</button>
+                    <button className="action-button">Test Ride</button>
+                    
+                </div>
+            </nav>
             <h2>Book Your Electric Bike</h2>
             <form onSubmit={handleSubmit}>
                 <div>
